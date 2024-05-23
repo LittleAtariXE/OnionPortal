@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% set show_navbar = True %}
+
+{% block content %}
+    <div class="showlogs-container">
+        <div class="showlogs-title">{{log_name}}</div>
+        <div class="showlogs-logs"><pre>{{logs}}</pre></div>
+        
+    </div>
+{% endblock %}

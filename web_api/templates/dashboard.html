@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% set show_navbar = True %}
+
+{% block content %}
+    <div class="dash-container">
+        <a class="dash-item" href="{{url_for('portal.logs_menu')}}"><span>Show Logs</span></a>
+        <a class="dash-item" href="{{url_for('portal.portals')}}"><span>Portals</span></a>
+        <a class="dash-item" href="#"><span>SECTION</span></a>
+    </div>
+
+{% endblock %}

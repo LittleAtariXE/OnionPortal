@@ -1,0 +1,314 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    background: url('img/back1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-container {
+    opacity: 0.8;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-container{
+    height: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+
+}
+
+.logo-img{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-text{
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: red;
+}
+
+.home-img{
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.2;
+    transition: all 1.5s ease-out;
+}
+
+.home-img:hover{
+    opacity: 0.9;
+}
+
+.home-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.navbar-container{
+    height: 50px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar-item a{
+    text-decoration: none;
+    font-size: 26px;
+    color: whitesmoke;
+    transition: all 1s ease-out;
+}
+
+.navbar-item a:hover{
+    font-size: 36px;
+    color: red;
+}
+
+.dash-container{
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.dash-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 260px;
+    background-color: rgba(68, 87, 128, 0.1);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border: solid 1px white;
+    transition: all 1s ease-out;
+}
+
+.dash-item:hover{
+    border: solid 2px red;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(68, 87, 128, 0.8);
+}
+
+.dash-item:hover span{
+    color: red;
+    font-size: 2rem;
+}
+
+.dash-item span{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: all 1s ease-out;
+
+}
+
+.logs-menu-container{
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logs-menu-item{
+    width: 160px;
+    height: 160px;
+    background-color: aliceblue;
+    margin: 10px;
+    background-image: url('img/onionh1.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+.logs-menu-item span{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: red;
+}
+
+.logs-menu-item:hover{
+    border: solid 3px red;
+    background-color: aliceblue;
+    background-image: none;
+
+}
+
+.showlogs-container{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.showlogs-title{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+
+}
+
+.showlogs-logs{
+    background-color: white;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px red;
+    overflow: auto;
+    height: 500px;
+    max-width: 800px;
+    min-width: 360px;
+    font-size: 16px;
+}
+
+.portals-bar{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+}
+
+.portals-button{
+    height: 60px;
+    min-width: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: solid 1px white;
+    font-size: 20px;
+    transition: all 0.5s ease-out;
+
+}
+
+.portals-button:hover{
+    border: solid 3px red;
+    min-width: 110px;
+}
+
+.portals-menu-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.portals-menu-main-item{
+    width: 160px;
+    height: 160px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-image: url('img/portal2.jpg');
+    background-size: cover;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 1.5s ease-out;
+}
+
+.portals-menu-main-item:hover{
+    width: 320px;
+    height: 320px;
+    background-color: aliceblue;
+    background-image: none;
+    color: black;
+}
+
+.portals-menu-main-item:hover .portals-menu-item{
+    font-size: 20px;
+}
+
+.portals-menu-item{
+    font-size: 14px;
+    transition: all 1.5s ease-out;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        width: 95%;
+        padding: 5px;
+    }
+}
+

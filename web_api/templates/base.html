@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Onion Portals</title>
+    <meta name="" content="OnionPortals Dashboard">
+</head>
+<body>
+    <div class="main-container">
+        <div class="logo-container">
+            <div class="logo-img"><img src="{{url_for('static', filename='/img/logo1.jpg')}}"></div>
+            <div class="logo-text">Onion Portals</div>
+            <div class="logo-img"><img src="{{url_for('static', filename='/img/logo1.jpg')}}"></div>
+        </div>
+        {% if show_navbar %}
+            <div class="navbar-container">
+                <div class="navbar-item"><a href="{{url_for('portal.home')}}">Home</a></div>
+                <div class="navbar-item"><a href="{{url_for('portal.dash')}}">Dash</a></div>
+                <div class="navbar-item"><a href="{{url_for('portal.logs_menu')}}">Logs</a></div>
+                <div class="navbar-item"><a href="{{url_for('portal.portals')}}">Portals</a></div>
+            </div>
+        {% endif %}
+    {% block content %}
+    {% endblock %}
+    
+    </div>
+    
+    
+    
+</body>
+</html>

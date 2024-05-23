@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% set show_navbar = True %}
+
+{% block content %}
+    <div class="logs-menu-container">
+        {% for name in logs %}
+            <a class="logs-menu-item" href="{{url_for('portal.show_logs', name=name)}}"><span>{{name}}</span></a>
+        {% endfor %}
+    </div>
+{% endblock %}

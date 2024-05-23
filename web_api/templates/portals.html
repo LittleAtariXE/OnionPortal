@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% set show_navbar = True %}
+
+{% block content %}
+    
+        <div class="portals-bar">
+            <form method="POST">
+                <input type="submit" class="portals-button" name="Start" value="START">   
+                <input type="submit" class="portals-button" name="Stop" value="STOP">
+                <input type="submit" class="portals-button" name="Reload" value="RELOAD">
+            </form>
+        </div>
+        <div class="portals-menu-container">
+            {% for o in onions %}
+                <a class="portals-menu-main-item">
+                    <div class="portals-menu-item"><h2>{{o['NAME']}}</h2></div>
+                    <div class="portals-menu-item">Status: {{o['STATUS']}}</div>
+                    <div class="portals-menu-item">TOR: {{o['INFO_TOR']}}</div>
+                    <div class="portals-menu-item">Exit Node: {{o['EXIT_NODE']}}</div>
+                </a>
+            {% endfor %}
+        </div>
+
+{% endblock %}
