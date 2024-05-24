@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% set show_navbar = True %}
+
+{% block content %}
+    <div class="add-portal-container">
+        <div class="add-portal-text">
+            <span>Select port numbers; a new TOR Proxy will be created on them, which will be available in the 'Portals' section. The first port number indicates the port you will connect to the container on, and the second number indicates the TOR port that will be created in the container. If you want more available ports, you need to edit the 'CONSTRUCTOR.ini' file and increase the 'EXTRA_PORTS' value, then build a new container.</span>
+        </div>
+        <form method="post">
+            <label for="port">Choose Port</label>
+            <select name="port" id="add-portal-port">
+                {% for port in ports %}
+                    <option value="{{ port }}">{{ port }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit" class="add-portal-button">ADD Portal</button>
+        </form>
+    </div>
+{% endblock %}

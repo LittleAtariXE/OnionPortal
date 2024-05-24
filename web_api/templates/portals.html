@@ -7,12 +7,12 @@
             <form method="POST">
                 <input type="submit" class="portals-button" name="Start" value="START">   
                 <input type="submit" class="portals-button" name="Stop" value="STOP">
-                <input type="submit" class="portals-button" name="Reload" value="RELOAD">
+                <input type="submit" disabled class="portals-button" name="Reload" value="RELOAD">
             </form>
         </div>
         <div class="portals-menu-container">
             {% for o in onions %}
-                <a class="portals-menu-main-item">
+                <a class="portals-menu-main-item" href="{{url_for('portal.show_portal', name=o['NAME'])}}">
                     <div class="portals-menu-item"><h2>{{o['NAME']}}</h2></div>
                     <div class="portals-menu-item">Status: {{o['STATUS']}}</div>
                     <div class="portals-menu-item">TOR: {{o['INFO_TOR']}}</div>

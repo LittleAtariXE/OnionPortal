@@ -49,3 +49,36 @@ def portals():
 @portal.route("/portals/confirm")
 def portals_confirm():
     return redirect(url_for('portal.portals'))
+
+@portal.route("/portals/show/<name>", methods=["POST", "GET"])
+def show_portal(name):
+    onion = current_app.OnionPortal.onions.get(name)
+    info = onion.info
+    if request.method == "POST":
+        if request.form.get("Start"):
+            onion.START()
+        elif request.form.get("Stop"):
+            onion.stop()
+        elif request.form.get("Circuit"):
+            onion.newCircuit()
+        return redirect(url_for("portal.show_portal_confirm", name=name))
+
+    return render_template("show_portal.html", info=info)
+
+@portal.route("/portals/show/confirm/<name>")
+def show_portal_confirm(name):
+    return redirect(url_for("portal.show_portal", name=name))
+
+@portal.route("/add", methods=["POST", "GET"])
+def add_portal():
+    OP = current_app.OnionPortal
+    ports = OP.extra_ports
+    if request.method == "POST":
+        port_num = request.form.get("port")
+        OP.addOnion(port_num)
+        return redirect(url_for("portal.add_portal_confirm"))
+    return render_template("add_portal.html", ports=ports)
+
+@portal.route("/add/confirm")
+def add_portal_confirm():
+    return redirect(url_for("portal.add_portal"))

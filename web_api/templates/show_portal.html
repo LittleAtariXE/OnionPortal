@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% set show_navbar = True %}
+
+{% block content %}
+    <div class="show-portal-container">
+        <div class="show-portal-item">Name: {{info['NAME']}}</div>
+        <div class="show-portal-item">Status: {{info['STATUS']}}</div>
+        <div class="show-portal-item">TOR Conn: {{info['INFO_TOR']}}</div>
+        <div class="show-portal-item">Socks Port: {{info['SOCKS_PORT']}}</div>
+        <div class="show-portal-item">Outside Port: {{info['OUT_PORT']}}</div>
+        <div class="show-portal-item">Exit Node: {{info['EXIT_NODE']}}</div>
+
+        <div class="show-portal-menu">
+            <form method="POST">
+                <input type="submit" class="show-portal-menu-item" name="Start" value="START">
+                <input type="submit" class="show-portal-menu-item" name="Stop" value="STOP">
+                <input type="submit" class="show-portal-menu-item" name="Circuit" value="New Circuit">
+            </form>
+        </div>
+        
+    </div>
+
+{% endblock %}

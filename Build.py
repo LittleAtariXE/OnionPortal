@@ -58,10 +58,10 @@ class DockerBuilder:
     
 if __name__ == "__main__":
     builder = DockerBuilder()
-    print(builder.conf)
     builder.buildDockerfile()
-    # builder.buildDockerImage()
-    # builder.buildDockerStartSh()
+    builder.buildDockerImage()
+    builder.buildDockerStartSh()
     print("\nDONE")
+    print("\n\nNow you can run images: 'sh start_portal.sh")
 
 

@@ -297,6 +297,88 @@ body {
     transition: all 1.5s ease-out;
 }
 
+.show-portal-container{
+    width: 500px;
+    height: 500px;
+    background-image: url('img/portal2.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-portal-item{
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3px;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    font-size: 22px;
+
+}
+
+.show-portal-menu{
+    margin-top: 20px;
+    
+}
+
+.show-portal-menu-item{
+    height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all 0.5s ease-out;
+}
+
+.show-portal-menu-item:hover{
+    border: solid 3px red;
+    color: red;
+    height: 65px;
+}
+
+.add-portal-container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+#add-portal-port{
+    height: 50px;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.add-portal-button{
+    height: 50px;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-right: auto;
+    transition: all 0.5s ease-out;
+}
+
+.add-portal-button:hover{
+    border: solid 2px red;
+    color: red;
+}
+
+.add-portal-text{
+    padding: 10px;
+    background: white;
+    font-size: 18px;
+}
 
 @media (max-width: 768px) {
     .main-container {
