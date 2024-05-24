@@ -10,3 +10,4 @@
         <img src="web_api/static/img/portal2.jpg" style="width: 50%;">
     </div>
 </body>
+</html>
