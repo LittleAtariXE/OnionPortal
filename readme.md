@@ -6,4 +6,5 @@
 </head>
 <body>
     <div id="title" align="center"><h1>Onion Portal</h2></div>
+    <img src="web_api/static/img/portal2.jpg>
 </body>
