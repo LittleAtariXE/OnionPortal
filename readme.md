@@ -17,7 +17,8 @@
     <div id="content" align="center">
         <a href="#requirements">Requirements</a> &nbsp;|&nbsp;
         <a href="#installation">Installation</a> &nbsp;|&nbsp;
-        <a href="#configuration">Configuration</a>
+        <a href="#configuration">Configuration</a> &nbsp;|&nbsp;
+        <a href="#handling">Handling the Program</a>
     </div>
     <div id="requirements">
         <h2 align="center">Requirements</h2>
@@ -48,6 +49,13 @@
         <p>This command will automatically build the Docker image according to the configuration in the CONSTRUCTOR.ini file, create a container from the image, and prepare a ready-to-use start command. You do not need to manually enter all the ports. After completing all the steps and creating the image, a "start_portal.sh" file will appear. Run this file with the command:
             <pre><code>sh start_portal.sh</code></pre>
             <br/>This will start the application.
+        </p>
+    </div>
+    <div id="handling">
+        <h2 align="center">Handling the Program</h2>
+        <p>To manage the TOR proxies, you need to connect to the application through a web browser. Open your browser and navigate to the address:
+            <pre><code>http://127.0.0.1:CONTROL_PORT</code></pre>
+            <br/>Replace <code>CONTROL_PORT</code> with the actual control port number specified in your configuration. The application interface will be displayed, allowing you to manage the proxies.
         </p>
     </div>
 </body>
