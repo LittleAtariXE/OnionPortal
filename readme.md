@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div align="center">Not Ready Yet !!!!</div>
     <div id="title" align="center"><h1>Onion Portal</h1></div>
     <div align="center">
         <img src="web_api/static/img/portal2.jpg" style="width: 50%;">
@@ -24,7 +23,7 @@
     <div id="requirements">
         <h2 align="center">Requirements</h2>
         <ul>
-            <li>Linux (Tested on ParrotOS)</li>
+            <li>Linux (Tested on ParrotOS, Debian)</li>
             <li>Docker installed</li>
             <li>Python 3.11</li>
         </ul>
