@@ -18,7 +18,8 @@
         <a href="#installation">Installation</a> &nbsp;|&nbsp;
         <a href="#configuration">Configuration</a> &nbsp;|&nbsp;
         <a href="#handling">Handling the Program</a> &nbsp;|&nbsp;
-        <a href="#controls">Controls</a>
+        <a href="#controls">Controls</a> &nbsp;|&nbsp;
+        <a href="#screenshot">Screenshot</a>
     </div>
     <div id="requirements">
         <h2 align="center">Requirements</h2>
@@ -82,6 +83,27 @@
             <p>If you need more proxies, you must edit the CONSTRUCTOR.ini file and increase the number of EXTRA_PORT, then build a new container.</p>
             <p>Each added portal will appear in the Portals section.</p>
         </div>
+    </div>
+    <br/>
+    <br/>
+    <div id="screenshot">
+        <h2 align="center">Screenshot</h2>
+        <div align="center">
+            <img src="screenshot/p1.jpg">
+        </div>
+        <br/>
+        <div align="center">
+            <img src="screenshot/p2.jpg">
+        </div>
+        <br/>
+        <div align="center">
+            <img src="screenshot/p3.jpg">
+        </div>
+        <br/>
+        <div align="center">
+            <img src="screenshot/p4.jpg">
+        </div>
+        <br/>
     </div>
 </body>
 </html>
